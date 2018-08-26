@@ -1,0 +1,36 @@
+<img  src="./assets/images/spinner.gif" *ngIf="loading" />
+
+<div *ngIf="currentMovie">
+
+  <div class="header">
+    {{currentMovie.Title}}
+  </div>
+
+  <div class="details">
+    Genre: {{currentMovie.Genre}}
+  </div>
+
+
+  <div class="details">
+    Rated: {{currentMovie.Rated}}
+  </div>
+
+  <div class="details">
+    Language:{{currentMovie.Language}}
+  </div>
+  <div class="details">
+    Score:{{currentMovie.Metascore}}
+  </div>
+  <div class="details">
+    Price:{{currentMovie.Price}}
+  </div>
+  <div class="details">
+    Writer: {{currentMovie.Writer}}
+  </div>
+  <div class="details">
+    Awards: {{currentMovie.Awards}}
+  </div>
+  <div class="details">
+    Actors: {{currentMovie.Actors}}
+  </div>
+</div>

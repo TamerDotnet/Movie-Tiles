@@ -1,0 +1,30 @@
+<app-toolbar>
+
+</app-toolbar>
+
+<div class="flex-container" style="padding:10px">
+  <div class="flex-items" *ngFor="let movie of movies | async">
+    <div #divMovieCard (id)="movie.ID" (name)="movie.ID" class="tp-box" [@flipState]='movie.state' (click)='toggleState(movie)'>
+
+      <div class="tp-box__side tp-box__front" style="background-color:white;clear: both;width:350px;height:350px;">
+        <div style="min-height:300px; ">
+          <img src="{{movie.Poster}}" style="width:250px;height:250px;" id="img{{movie.ID}}" alt="movie {{movie.Title}}" layout-fill>
+
+        </div>
+        <div class="tp-poster__title">
+          {{movie.Title}}
+        </div>
+        
+
+      </div>
+      <div class="tp-box__side tp-box__back" style="width:350px;height:350px;clear: both; z-index:0">
+        <tile-back #selectedMovieComponent [currentMovie]="selectedMovie"></tile-back>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+ 

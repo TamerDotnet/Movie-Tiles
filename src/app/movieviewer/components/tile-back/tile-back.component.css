@@ -1,0 +1,23 @@
+.details {
+  font-size: 11px;
+  display: block;
+  font-family: "Lucida Grande",sans-serif;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  line-height: 2.0;
+  white-space: normal;
+}
+
+.header {
+  font-family: 'Lucida Grande",sans-serif';
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  line-height: 2.0;
+  white-space: normal;
+}
